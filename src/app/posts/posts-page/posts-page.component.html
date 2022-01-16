@@ -1,0 +1,60 @@
+<div class="wrapper">
+    <div class="posts">
+        <div class="posts__post" *ngFor="let post of posts">
+            <h2 class="posts__post-title">
+                <a [routerLink]="['/post', post.id]" class="posts__post-title-link">
+                 {{post.name}}
+                </a>
+            </h2>
+            <img src="{{post.url}}" alt="picture" class="posts__post-picture">
+            <p class="posts__post-desc">
+                {{post.desc}}
+            </p>
+        </div>
+        <!-- <div class="posts__post">
+            <h2 class="posts__post-title" *ngFor="let post of posts">
+                Title 2
+            </h2>
+            <img src="../../../assets/doberman.jpg" alt="picture" class="posts__post-picture">
+            <p class="posts__post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores esse, neque quia quo quam quas ut dolorum id nesciunt possimus voluptatum doloribus quaerat et, architecto distinctio rem nihil odit.
+            </p>
+        </div>
+        <div class="posts__post">
+            <h2 class="posts__post-title" *ngFor="let post of posts">
+                Title 3
+            </h2>
+            <img src="../../../assets/doberman.jpg" alt="picture" class="posts__post-picture">
+            <p class="posts__post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores esse, neque quia quo quam quas ut dolorum id nesciunt possimus voluptatum doloribus quaerat et, architecto distinctio rem nihil odit.
+            </p>
+        </div>
+        <div class="posts__post">
+            <h2 class="posts__post-title" *ngFor="let post of posts">
+                Title 4
+            </h2>
+            <img src="../../../assets/doberman.jpg" alt="picture" class="posts__post-picture">
+            <p class="posts__post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores esse, neque quia quo quam quas ut dolorum id nesciunt possimus voluptatum doloribus quaerat et, architecto distinctio rem nihil odit.
+            </p>
+        </div>
+        <div class="posts__post">
+            <h2 class="posts__post-title" *ngFor="let post of posts">
+                Title 5
+            </h2>
+            <img src="../../../assets/doberman.jpg" alt="picture" class="posts__post-picture">
+            <p class="posts__post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores esse, neque quia quo quam quas ut dolorum id nesciunt possimus voluptatum doloribus quaerat et, architecto distinctio rem nihil odit.
+            </p>
+        </div>
+        <div class="posts__post">
+            <h2 class="posts__post-title" *ngFor="let post of posts">
+                Title 6
+            </h2>
+            <img src="../../../assets/doberman.jpg" alt="picture" class="posts__post-picture">
+            <p class="posts__post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores esse, neque quia quo quam quas ut dolorum id nesciunt possimus voluptatum doloribus quaerat et, architecto distinctio rem nihil odit.
+            </p>
+        </div> -->
+    </div>
+</div>
